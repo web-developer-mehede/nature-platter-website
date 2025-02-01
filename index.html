@@ -3,15 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature Platter Website</title>
+    <title>Nature Platter</title>
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Daisy CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/47fec407da.js" crossorigin="anonymous"></script>
+    <!-- Tailwind CSS Customization -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'nature-primary': '#179800',
+                'nature-secondary': '#EFEBE3',
+                'nature-text-primary': '#111111',
+                'nature-text-secondary': 'rgb(17, 17, 17, 0.7);',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- Css Style -->
+    <style>
+        .sora-font {
+        font-family: "Sora", serif;
+        
+       }
+    </style>
 </head>
-<body>
+<body class="sora-font">
 
     <!-- Header Section Start -->
-    <header></header>
+    <header class="bg-gradient-to-t from-nature-secondary">
+        
+        <!-- Nav Section Start -->
+        <nav class="md:w-[85%] mx-auto border-2 border-nature-primary md:border-none py-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start flex-row-reverse lg:flex-row flex-grow justify-between lg:justify-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Product</a></li>                      
+                      <li><a>Services</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <img src="images/logo-header.svg" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>                      
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                  <div>
+                    <i class="fa-solid fa-magnifying-glass text-2xl mr-3"></i>
+                    <i class="fa-solid fa-cart-shopping text-2xl mr-7"></i>                    
+                  </div>
+                  <a class="btn text-nature-text-primary bg-white font-normal border-2 border-nature-primary py-2 px-7">Login</a>
+                  <a class="btn bg-nature-primary text-white font-normal py-2 px-7 ml-3">Register</a>
+                </div>
+              </div>
+        </nav>
+
+        <!-- Banner Section Start -->
+        <div class="md:w-[85%] mx-auto text-center mt-20">            
+                <div class="w-[90%] mx-auto md:w-[100%]">
+                    <h1 class="text-4xl md:text-6xl font-semibold text-nature-text-primary">Freshness <span class="text-nature-primary">You Can <br>
+                        Count</span> On, Prices You’ll Love!</h1>
+                   <p class="text-xl text-nature-text-secondary my-7">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+                </div>
+                <img class="mx-auto" src="images/hero-vegetables.png" alt="">            
+        </div>
+    </header>
 
     <!-- Main Section Start -->
-    <main></main>
+    <main>
+
+        <!-- Services Section Start -->
+        <section class="my-36">
+            <div class="w-[95%] md:w-[85%] mx-auto">
+                <h3 class="text-4xl font-semibold text-nature-primary mb-12">Services</h3>
+                <!-- Services Card Container -->
+                <div class="text-center grid grid-cols-3 gap-6">
+                    <!-- Service Card - 1 -->
+                    <div class="bg-nature-secondary rounded-xl p-8">
+                        <img class="mx-auto" src="images/service.svg" alt="Support Image">
+                        <h5 class="text-2xl text-nature-text-primary font-semibold mt-7 mb-4">24/7 Services</h5>
+                        <p class="text-xl text-nature-text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <!-- Service Card - 2 -->
+                    <div class="bg-nature-secondary rounded-xl p-8">
+                        <img class="mx-auto" src="images/delivery.svg" alt="Delivery Image">
+                        <h5 class="text-2xl text-nature-text-primary font-semibold mt-7 mb-4">24/7 Services</h5>
+                        <p class="text-xl text-nature-text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                    <!-- Service Card - 3 -->
+                    <div class="bg-nature-secondary rounded-xl p-8">
+                        <img class="mx-auto" src="images/healthy.svg" alt="healthy Image">
+                        <h5 class="text-2xl text-nature-text-primary font-semibold mt-7 mb-4">24/7 Services</h5>
+                        <p class="text-xl text-nature-text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer Section Start -->
     <footer></footer>
